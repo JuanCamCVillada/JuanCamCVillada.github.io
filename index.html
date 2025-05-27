@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- SECCIÓN 1: Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Juan Camilo Correa Villada</title>
+    
+    <!-- SECCIÓN 2: Enlaces a librerías externas -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Añadimos Swiper JS para el slider -->
+    <!-- Swiper JS para el slider de imágenes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    
+    <!-- SECCIÓN 3: Configuración personalizada de Tailwind CSS -->
     <script>
         tailwind.config = {
             theme: {
@@ -27,70 +32,73 @@
         }
     </script>
 </head>
+
 <body class="bg-secondary p-4 md:p-10 font-sans text-text-primary">
+    <!-- SECCIÓN 4: Contenedor principal del CV -->
     <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Header Section -->
+            
+            <!-- SECCIÓN 5: Header - Información personal y contacto -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 bg-primary rounded-2xl p-8 text-white text-center flex flex-col items-center shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <!-- Foto de perfil -->
                 <div class="w-80 h-80 overflow-hidden mb-4">
                     <img src="src/ImgPerfilJuanC.png" alt="Juan Camilo Correa Villada" class="w-full h-full object-cover">
                 </div>
+                
+                <!-- Nombre y título profesional -->
                 <h1 class="text-3xl md:text-4xl font-bold mb-2">JUAN CAMILO CORREA VILLADA</h1>
                 <p class="text-lg mb-4">Desarrollador de Software en Formación</p>
                 
+                <!-- Información de contacto -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 text-sm md:text-base">
+                    <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
+                        <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                        <span>Rionegro, Antioquia – Colombia</span>
+                    </div>
 
-  <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
-    <i class="fas fa-map-marker-alt text-white text-lg"></i>
-    <span>Rionegro, Antioquia – Colombia</span>
-  </div>
+                    <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
+                        <i class="fas fa-phone text-white text-lg"></i>
+                        <span>316 516 0846</span>
+                    </div>
 
-  <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
-    <i class="fas fa-phone text-white text-lg"></i>
-    <span>316 516 0846</span>
-  </div>
+                    <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
+                        <i class="fas fa-envelope text-white text-lg"></i>
+                        <span>juanvillada5501@gmail.com</span>
+                    </div>
 
-  <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
-    <i class="fas fa-envelope text-white text-lg"></i>
-    <span>juanvillada5501@gmail.com</span>
-  </div>
+                    <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
+                        <i class="fab fa-github text-white text-lg"></i>
+                        <a href="https://github.com/JuanCamCVillada" target="_blank" class="hover:underline text-white">GitHub</a>
+                    </div>
 
-  <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
-    <i class="fab fa-github text-white text-lg"></i>
-    <a href="#" class="hover:underline text-white">GitHub</a>
-  </div>
-
-  <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
-    <i class="fab fa-linkedin text-white text-lg"></i>
-    <a href="#" class="hover:underline text-white">LinkedIn</a>
-  </div>
-
-</div>
-
+                    <div class="flex items-center gap-3 p-4 rounded-xl shadow-sm" style="background-color: #1D5DBD; color: #fff;">
+                        <i class="fab fa-linkedin text-white text-lg"></i>
+                        <a href="https://www.linkedin.com/in/juan-camilo-correa-villada/" target="_blank" class="hover:underline text-white">LinkedIn</a>
+                    </div>
+                </div>
             </div>
             
-            <!-- Perfil Profesional -->
+            <!-- SECCIÓN 6: Perfil Profesional - Descripción personal y habilidades -->
             <div class="col-span-1 md:col-span-2 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-user-circle"></i>
                 </div>
                 <h2 class="text-2xl font-semibold text-primary mb-3">Perfil Profesional</h2>
 
-               <p class="text-text-secondary leading-relaxed">
-    Soy <strong>estudiante de Ingeniería en Sistemas</strong> con un gusto natural por el aprendizaje especialmente cuando es <strong>autónomo</strong>. Me apasiona aprender por iniciativa propia, el <strong>desarrollo de software</strong> y la <strong>ciberseguridad</strong>, área en la que actualmente me estoy formando de manera autodidacta.
-</p>
+                <p class="text-text-secondary leading-relaxed">
+                    Soy <strong>estudiante de Ingeniería en Sistemas</strong> con un gusto natural por el aprendizaje especialmente cuando es <strong>autónomo</strong>. Me apasiona aprender por iniciativa propia, el <strong>desarrollo de software</strong> y la <strong>ciberseguridad</strong>, área en la que actualmente me estoy formando de manera autodidacta.
+                </p>
 
-<p class="text-text-secondary leading-relaxed mt-4">
-    Disfruto <strong>leer</strong> y <strong>profundizar en temas académicos</strong> que despiertan mi curiosidad, lo que me ha permitido avanzar en <strong>conocimientos clave más allá del aula</strong>. Actualmente me estoy formando de manera autónoma en <strong>ciberseguridad</strong>, un campo que me entusiasma por su <strong>impacto y potencial</strong>.
-</p>
+                <p class="text-text-secondary leading-relaxed mt-4">
+                    Disfruto <strong>leer</strong> y <strong>profundizar en temas académicos</strong> que despiertan mi curiosidad, lo que me ha permitido avanzar en <strong>conocimientos clave más allá del aula</strong>. Actualmente me estoy formando de manera autónoma en <strong>ciberseguridad</strong>, un campo que me entusiasma por su <strong>impacto y potencial</strong>.
+                </p>
 
-<p class="text-text-secondary leading-relaxed mt-4">
-    Además, he fortalecido mis <strong>habilidades de comunicación</strong> y <strong>trabajo en equipo</strong> gracias a experiencias en atención al cliente. Me motiva <strong>crear soluciones digitales útiles</strong>, asumir retos y aportar desde una <strong>visión analítica, práctica</strong> y siempre en <strong>crecimiento</strong>.
-</p>
-
+                <p class="text-text-secondary leading-relaxed mt-4">
+                    Además, he fortalecido mis <strong>habilidades de comunicación</strong> y <strong>trabajo en equipo</strong> gracias a experiencias en atención al cliente. Me motiva <strong>crear soluciones digitales útiles</strong>, asumir retos y aportar desde una <strong>visión analítica, práctica</strong> y siempre en <strong>crecimiento</strong>.
+                </p>
             </div>
             
-            <!-- Objetivo Profesional -->
+            <!-- SECCIÓN 7: Objetivo Profesional - Metas y aspiraciones -->
             <div class="col-span-1 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-bullseye"></i>
@@ -99,10 +107,9 @@
                 <p class="text-text-secondary leading-relaxed">
                     Integrarme a un <strong>equipo de desarrollo tecnológico</strong> donde pueda <strong>aplicar y seguir fortaleciendo</strong> mis habilidades en <strong>programación</strong>, <strong>diseño UX UI</strong> y <strong>análisis de ciberseguridad</strong>, participando en <strong>proyectos de impacto real</strong>. Aspiro a desempeñarme en una <strong>empresa con proyección nacional o internacional</strong> y, a mediano plazo, <strong>especializarme como Pentester</strong> en el área de <strong>ciberseguridad</strong>.
                 </p>
-
             </div>
             
-            <!-- Habilidades Técnicas -->
+            <!-- SECCIÓN 8: Habilidades Técnicas - Tecnologías y herramientas -->
             <div class="col-span-1 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-code"></i>
@@ -120,52 +127,52 @@
                 </div>
             </div>
             
-<!-- Formación Académica -->
-<div class="col-span-1 md:col-span-2 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-    <div class="flex justify-center text-primary text-4xl mb-4">
-        <i class="fas fa-graduation-cap"></i>
-    </div>
+            <!-- SECCIÓN 9: Formación Académica - Historial educativo -->
+            <div class="col-span-1 md:col-span-2 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex justify-center text-primary text-4xl mb-4">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
 
-    <h2 class="text-2xl font-semibold text-primary mb-6">Formación Académica</h2>
+                <h2 class="text-2xl font-semibold text-primary mb-6">Formación Académica</h2>
 
-    <div class="relative border-l-2 border-primary ml-4 pl-6">
-        <!-- Item 1 -->
-        <div class="mb-8 relative">
-            <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
-            <h3 class="text-lg font-medium mb-1">Ingeniería en Sistemas</h3>
-            <div class="text-text-secondary">Corporación Universitaria Remington</div>
-            <div class="text-text-secondary text-sm"><strong>En curso</strong> (2024 - Actualidad)</div>
-        </div>
+                <!-- Timeline de educación -->
+                <div class="relative border-l-2 border-primary ml-4 pl-6">
+                    <!-- Ingeniería en Sistemas - Actual -->
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
+                        <h3 class="text-lg font-medium mb-1">Ingeniería en Sistemas</h3>
+                        <div class="text-text-secondary">Corporación Universitaria Remington</div>
+                        <div class="text-text-secondary text-sm"><strong>En curso</strong> (2024 - Actualidad)</div>
+                    </div>
 
-        <!-- Item 2 -->
-        <div class="mb-8 relative">
-            <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
-            <h3 class="text-lg font-medium mb-1">Ingeniería Civil</h3>
-            <div class="text-text-secondary">Politécnico Jaime Isaza Cadavid</div>
-            <div class="text-text-secondary text-sm">Dos semestres (2023 - 2024). Decidí cambiar de carrera.</div>
-        </div>
+                    <!-- Ingeniería Civil -->
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
+                        <h3 class="text-lg font-medium mb-1">Ingeniería Civil</h3>
+                        <div class="text-text-secondary">Politécnico Jaime Isaza Cadavid</div>
+                        <div class="text-text-secondary text-sm">Dos semestres (2023 - 2024). Decidí cambiar de carrera.</div>
+                    </div>
 
-        <!-- Item 3 -->
-        <div class="mb-8 relative">
-            <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
-            <h3 class="text-lg font-medium mb-1">Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
-            <div class="text-text-secondary">SENA</div>
-            <div class="text-text-secondary text-sm">(2020 - Pausado debido a la pandemia)</div>
-        </div>
+                    <!-- Tecnólogo SENA -->
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
+                        <h3 class="text-lg font-medium mb-1">Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+                        <div class="text-text-secondary">SENA</div>
+                        <div class="text-text-secondary text-sm">(2020 - Pausado debido a la pandemia)</div>
+                    </div>
 
-        <!-- Item 4 -->
-        <div class="relative">
-            <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
-            <h3 class="text-lg font-medium mb-1">Técnico en Análisis y Desarrollo de Software</h3>
-            <div class="text-text-secondary">SENA</div>
-            <div class="text-text-secondary text-sm">2018 - 2019</div>
-        </div>
-    </div>
-</div>
-
+                    <!-- Técnico SENA -->
+                    <div class="relative">
+                        <div class="absolute -left-5 top-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></div>
+                        <h3 class="text-lg font-medium mb-1">Técnico en Análisis y Desarrollo de Software</h3>
+                        <div class="text-text-secondary">SENA</div>
+                        <div class="text-text-secondary text-sm">2018 - 2019</div>
+                    </div>
+                </div>
+            </div>
             
-            <!-- Certificaciones - Altura aumentada -->
-           <div class="lg:col-span-1 md:col-span-2 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <!-- SECCIÓN 10: Certificaciones - Cursos y certificados obtenidos -->
+            <div class="lg:col-span-1 md:col-span-2 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-certificate"></i>
                 </div>
@@ -176,63 +183,58 @@
                 </ul>
             </div>
             
-            <!-- Slider para capturas de proyectos -->
+            <!-- SECCIÓN 11: Slider de Proyectos - Galería de certificaciones y proyectos -->
             <div class="col-span-1 md:col-span-2 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-images"></i>
                 </div>
                 <h2 class="text-2xl font-semibold text-primary mb-3">Proyectos | Certificaciones</h2>
                 
-                <!-- Swiper slider -->
+                <!-- Swiper slider container -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
+                        <!-- Slide 1: Certificación Redes -->
                         <div class="swiper-slide">
                             <div class="bg-secondary rounded-lg p-2 h-40 flex items-center justify-center">
                                 <img src="src/CertRedes.png" alt="Proyecto 1" class="max-h-full max-w-full object-contain rounded" />
                             </div>
-                            <p class="text-center mt-2 text-text-secondary">Proyectos Final Redes de Datos</p>
-                        </div>
-                        
-                    
-                         <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <div class="bg-secondary rounded-lg p-2 h-40 flex items-center justify-center">
-                                <img src="src/CertGoogle.png" alt="Proyecto 1" class="max-h-full max-w-full object-contain rounded" />
-                            </div>
-                            <p class="text-center mt-2 text-text-secondary">Diseño UX/UI - Certificación Google</p>
+                            <p class="text-center mt-2 text-text-secondary">Proyecto Final – Redes de Datos</p>
                         </div>
 
-                        <!-- Slide 2 -->
+                        <!-- Slide 2: Certificación Google -->
                         <div class="swiper-slide">
                             <div class="bg-secondary rounded-lg p-2 h-40 flex items-center justify-center">
-                                <img src="src/CertSena.png" alt="Proyecto 1" class="max-h-full max-w-full object-contain rounded" />
+                                <img src="src/CertGoogle.png" alt="Proyecto 2" class="max-h-full max-w-full object-contain rounded" />
                             </div>
-                            <p class="text-center mt-2 text-text-secondary">Certificación Sena - Analis Y Desarrollo de Software</p>
+                            <p class="text-center mt-2 text-text-secondary">Diseño UX/UI – Certificación de Google</p>
                         </div>
 
-                        <!-- Slide 3 -->
+                        <!-- Slide 3: Certificación SENA -->
                         <div class="swiper-slide">
                             <div class="bg-secondary rounded-lg p-2 h-40 flex items-center justify-center">
-                                <img src="src/CertSmart.png" alt="Proyecto 1" class="max-h-full max-w-full object-contain rounded" />
+                                <img src="src/CertSena.png" alt="Proyecto 3" class="max-h-full max-w-full object-contain rounded" />
                             </div>
-                            <p class="text-center mt-2 text-text-secondary">Certificación SmartBit - Semillero python e inteligencia artificial</p>
+                            <p class="text-center mt-2 text-text-secondary">Certificación SENA – Análisis y Desarrollo de Software</p>
                         </div>
 
-                        
+                        <!-- Slide 4: Certificación SmartBit -->
+                        <div class="swiper-slide">
+                            <div class="bg-secondary rounded-lg p-2 h-40 flex items-center justify-center">
+                                <img src="src/CertSmart.png" alt="Proyecto 4" class="max-h-full max-w-full object-contain rounded" />
+                            </div>
+                            <p class="text-center mt-2 text-text-secondary">Certificación SmartBit – Semillero Python e Inteligencia Artificial</p>
+                        </div>
                     </div>
                     
-                    <!-- Controles del slider -->
-                     <br><br>
+                    <!-- Controles de navegación del slider -->
+                    <br><br>
                     <div class="swiper-pagination mt-4"></div>
                     <div class="swiper-button-next text-primary"></div>
                     <div class="swiper-button-prev text-primary"></div>
                 </div>
             </div>
-
-
             
-            <!-- Experiencia Laboral -->
+            <!-- SECCIÓN 12: Experiencia Laboral - Historial de trabajo -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-briefcase"></i>
@@ -249,20 +251,19 @@
                 </div>
             </div>
             
-            <!-- Enfoque Actual -->
+            <!-- SECCIÓN 13: Enfoque Actual - Aprendizaje y desarrollo actual -->
             <div class="col-span-1 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-search"></i>
                 </div>
                 <h2 class="text-2xl font-semibold text-primary mb-3">Enfoque Actual</h2>
-<p class="text-text-secondary leading-relaxed">
-  Actualmente, <strong>me estoy enfocando en fortalecer mis conocimientos</strong> en desarrollo front-end (<strong>HTML, CSS, JavaScript, Tailwind</strong>) y en inteligencia artificial con <strong>Python</strong>. 
-  Además, estoy aprendiendo sobre <strong>ciberseguridad</strong> de manera autodidacta.
-</p>
-
+                <p class="text-text-secondary leading-relaxed">
+                    Actualmente, <strong>me estoy enfocando en fortalecer mis conocimientos</strong> en desarrollo front-end (<strong>HTML, CSS, JavaScript, Tailwind</strong>) y en inteligencia artificial con <strong>Python</strong>. 
+                    Además, estoy aprendiendo sobre <strong>ciberseguridad</strong> de manera autodidacta.
+                </p>
             </div>
             
-            <!-- Aptitudes Personales -->
+            <!-- SECCIÓN 14: Aptitudes Personales - Habilidades blandas -->
             <div class="col-span-1 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-puzzle-piece"></i>
@@ -276,7 +277,7 @@
                 </ul>
             </div>
             
-            <!-- Idiomas -->
+            <!-- SECCIÓN 15: Idiomas - Competencias lingüísticas -->
             <div class="col-span-1 bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <div class="flex justify-center text-primary text-4xl mb-4">
                     <i class="fas fa-language"></i>
@@ -290,8 +291,9 @@
         </div>
     </div>
     
-    <!-- JavaScript para inicializar el slider -->
+    <!-- SECCIÓN 16: JavaScript - Inicialización del slider Swiper -->
     <script>
+        // Configuración del slider Swiper
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
